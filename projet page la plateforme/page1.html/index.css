@@ -1,0 +1,114 @@
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        color: #cecaca;
+        font-family: 'Roboto Regular',Helvetica,Arial,Lucida,sans-serif;
+        font-size: 25px;
+        line-height: 1.2em;
+        background-color: rgb(246, 246, 246)
+    }
+
+    header {
+        color: #fff;
+        padding: 1rem;
+        border: 2px solid #f05f40;
+        display: flex;
+        background-color: #f05f40;
+        
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+
+    .presentation_bloc {
+        color: #fff;
+        flex: 1;
+        background-color: #0052d6;
+        padding: 1rem;
+    }
+
+    .right {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image {
+        max-width: 1000%;
+        max-height: 1000%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .header_element_align {
+        background-color: #f05f40;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center; /* alignement horizontal au centre */
+          align-items: center; /* alignement vertical au centre */
+    }
+
+    .logo_laplateforme_bleu {
+        justify-content: right; /* alignement horizontal au centre */
+          align-items: right; /* alignement vertical au centre */
+    }
+
+
+    .menu_items {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: right; /* alignement horizontal au centre */
+          align-items: center; /* alignement vertical au centre */
+        font-size: 16px;
+        font-family: 'Roboto Slab',Georgia,"Times New Roman",serif;
+        font-weight: 600;
+        line-height: 80px;
+
+        color: #666;
+
+    }
+
+    .premiere_vue {
+        display: flex;
+        justify-content: right; /* alignement horizontal au centre */
+        align-items: right; /* alignement vertical au centre */
+        background-color: rgb(2,3,129)
+    }
+
+    .paragraphe_premiere_vue {
+        /* display: flex; */
+        /* justify-content: center; alignement horizontal au centre */
+        /* align-items: center; alignement vertical au centre */
+    }
+
+
+    .presentation_ {
+        background-color: #0052d6;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+
+    @media screen and (max-width: 900px) {
+        .container {
+            flex-direction: column;
+        }
+
+        .left, .right {
+            flex: none;
+        }
+    }
